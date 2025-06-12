@@ -1,4 +1,5 @@
 from character import Character
+from combat import run_combat
 
 def create_character():
     print("Welcome to Dungeon Crawl!")
@@ -20,8 +21,8 @@ def create_character():
 def main():
     player = create_character()
     print("You stand at the mouth of a dark dungeon...")
-    # Temporary: Exit after showing character
-    print("More coming soon!")
+    
+    run_combat(player)
 
 if __name__ == "__main__":
     main()  # Run the main function when this script is executed
