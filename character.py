@@ -1,4 +1,5 @@
-def __init__(self, name, char_class):
+class Character:
+    def __init__(self, name, char_class):
         # Set up basic character info
         self.name = name
         self.char_class = char_class
@@ -14,11 +15,9 @@ def __init__(self, name, char_class):
             self.attack += 2
         elif char_class == "Rogue":
             self.attack += 4 
-
         elif char_class == "Wizard":
             self.hp -= 5
             self.attack += 5
-
 
     def __str__(self):
         return (

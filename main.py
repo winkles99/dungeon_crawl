@@ -1,4 +1,4 @@
-from character import character
+from character import Character
 
 def create_character():
     print("Welcome to Dungeon Crawl!")
@@ -10,7 +10,7 @@ def create_character():
     print("3. Wizard")
 
     class_choice = input("Select a Class:")
-    classes = {"1:" "Fighter", "2:" "Rogue", "3:" "Wizard"}
+    classes = {"1": "Fighter", "2": "Rogue", "3": "Wizard"}
     char_class = classes.get(class_choice, "Fighter")
 
     player = Character(name, char_class)
